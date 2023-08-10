@@ -1,0 +1,42 @@
+{/* ButtonDocs.mdx */}
+
+import { Meta, Primary, Controls, Story } from "@storybook/blocks";
+import * as ButtonStories from "./Button.stories";
+
+<Meta of={ButtonStories} />
+
+# Button
+
+A button is ...
+
+<Primary />
+
+## Props
+
+<Controls />
+
+## Stories
+
+### Primary
+
+A button can be of primary importance.
+<Story of={ButtonStories.Primary} />
+
+A button can be of secondary importance.
+
+<Story of={ButtonStories.Secondary} />
+
+A button can be of Large importance.
+
+<Story of={ButtonStories.Large} />
+
+A button can be of Small importance.
+
+<Story of={ButtonStories.Small} />
+
+A button can be of Radio importance.
+
+<Story of={ButtonStories.RadioColor} />
+
+
+{/* ... */}

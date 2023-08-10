@@ -1,0 +1,57 @@
+.card {
+  border: 1px solid rgb(226, 226, 226);
+  background-color: rgb(250, 250, 250);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.064);
+  margin: 10px 0px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 4px rgba(122, 122, 122, 0.461);
+  background-color: rgb(241, 241, 241);
+  transform: scale(1.01);
+  transition: transform .3s ease;
+}
+.card .content {
+  max-width: 70%;
+}
+.card .content p {
+  color: #666;
+  margin-top: 3px;
+}
+.card .buttons {
+  display: flex;
+  align-items: center;
+}
+
+/* small screens */
+@media (max-width: 1023px) {
+  .card {
+    display: block;
+  }
+  .card .content {
+    max-width: 100%;
+    text-align: center;
+  }
+  .card .buttons {
+    margin-top: 10px;
+    text-align: center;
+  }
+  .card .buttons {
+    justify-content: center;
+  }
+}
+
+/* medium screens (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .card .content {
+    max-width: 100%;
+    text-align: start;
+  }
+  .card .buttons {
+    justify-content:flex-start;
+  }
+}
